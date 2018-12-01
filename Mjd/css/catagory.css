@@ -1,0 +1,175 @@
+body{
+	width: 100%;
+	height: 100%;
+}
+.body_mask{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+/* 头部搜索部分 */
+.top_banner form{
+	width: 100%;
+	height: 100%;
+	padding:0 44px;
+	display: block;
+	position: relative;
+	border-radius: 50px;
+}
+.top_banner form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 45px;
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    margin-top: 3px;
+}
+.top_search{
+	border-radius: 10px;
+}
+.icon_search{
+	position: absolute;
+	background-position: -107px 0;
+	height: 26px;
+	width: 28px;
+	display: block;
+	background-size: 270px 270px;
+	top: 12px;
+	left: 60px;
+}
+
+/* 商品列表 */
+.shop_list{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    overflow: hidden;
+}
+.list_left{
+	height: 643px;
+	width: 86px;
+	overflow: hidden;
+	position: absolute;
+	display: block;
+	z-index: 1000;
+}
+.list_left li {
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+    background: #f8f8f8;
+}
+.list_left li a{
+	display: block;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #080808;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.list_left .hot_rec a{
+    color: #e93b3d;
+}
+.list_right{
+	height: 643px;
+	width: 100%;
+	padding-left: 86px;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	z-index: 999;
+	margin-top: 19px;
+}
+.list_right .right{
+	float: right;
+	display: block;
+}
+.list_right  a span {
+    display: block;
+    color: #848689;
+    font-size: 10px;
+    line-height: 10px;
+    float: right;
+    right: 25px;
+    position: absolute;
+    top: 1px;
+}
+.list_right a .icon_paihang{
+	background: url('../img/paihang.png') no-repeat;
+	background-size: 12px 12px;
+	display: block;
+	position: relative;
+	top: 1px;
+}
+.list_right a .icon_right{
+	background-position: -230px -20px;
+}
+
+.hot_list{
+    border: 0;
+    font-size: 0;
+    padding: 7px 10px 0;
+    overflow: hidden;
+    margin-top: 9px;
+    background-color: #fff;
+}
+.hot_list img {
+    width: 70px;
+    height: 70px;
+}
+.hot_list li{
+	width: 32.8%;
+	float: left;
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.hot_list li p{
+	color: #333;
+    height: 35px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+
+.jd_footer{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    list-style: none;
+    font-size: 16px;
+    z-index: 1000;
+    background-color: #fff;
+}
+.jd_footer a{
+	width: 20%;
+	display: block;
+	float: left;
+	height: 13.33333vw
+}
+
+.jd_footer img{
+    left: -8vw;
+    width: 16vw;
+    bottom: 0;
+}
+
+.list_right a {
+    display: block;
+    float: right;
+}

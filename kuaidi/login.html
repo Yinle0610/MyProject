@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ais登录系统</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <!--[if lt IE 9]
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    ![endif]-->
+    <link rel="stylesheet" href="css/site.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="body-login">
+<div class="page">
+    <div class="page-left-info">
+        <div class="brand">
+            <img class="brand-img" src="" alt="">
+            <h1 class="brand-text">ais会员系统</h1>
+        </div>
+        <p>我递送的每一声问候和祝福，</p>
+        <p>得到的每一份支持，都是我坚定前行的动力。</p>
+        <p>Ais期待为您服务</p>
+    </div>
+    <div class="page-right-login">
+        <h3>登录</h3>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">快速登录</a></li>
+        </ul>
+        <form action="">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="手机号">
+            <input type="password" class="form-control" placeholder="密码">
+            <div class="yzm-group">
+                <input type="tel" name="vcode" class="form-control" title="验证码" placeholder="验证码" maxlength="4">
+                    <span class="input-group-btn">
+                        <img src="http://ec.yto.net.cn/vcode.htm" alt="" style="margin-top: -12px" width="60">
+                    </span>
+                </div>
+            <div class="form-group clearfix">
+                <div class="pull-left" style="width:100px;">
+                    <div class="icheckbox_flat-grey">
+                        <input type="checkbox" id="remember" style="position: absolute; opacity: 0;">
+                    </div>
+                    <label for="remember">记住我</label>
+                </div>
+                <a href="findpwd.html" class="pull-right">忘记密码?</a>
+
+            </div>
+            <input type="button" class="btn btn-group btn-group-justified" value="登录">
+        </div>
+        </form>
+        <div class="clearfix">
+            <p class="pull-left">
+                没有账号?&nbsp;&nbsp;
+                <a href="reg.html">点我注册</a>
+            </p>
+
+        </div>
+        <footer class="page-copyright">
+            <!--<p>
+                <a href="#">
+                    <img border="0" hspace="0" vspace="0" src="img/login-2.gif" alt="">
+                </a>
+            </p>-->
+            <p>ais速递有限公司&nbsp;&nbsp;版权所有 
+            </p>
+            <p>© 2018. All RIGHT RESERVED.</p>
+        </footer>
+    </div>
+</div>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

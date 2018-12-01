@@ -1,0 +1,133 @@
+body{
+    height: 999px;
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #333;
+}
+
+
+.top_banner{
+    border-bottom: 1px solid #333;
+}
+.jd_address{
+    overflow: hidden;
+    position: relative;
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: -1px;
+    line-height: 45px;
+    background: #fff;
+}
+.jd_address a{
+    position: relative;
+    display: inline-block;
+    color: #999;
+    max-width: 30%;
+    margin-right: 20px;
+    white-space: nowrap;
+    overflow: visible;
+    font-size: 14px;
+}
+.jd_address span{
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.jd_address span::before{
+    background: url("../img/adposistion.png");
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 15px;
+    margin: -2px 5px 0 0;
+    background-size: 13px!important;
+}
+.jd_address::after{
+    content: "编辑商品";
+    float: right;
+    color: #e4393c;
+    font-size: 14px;
+}
+
+
+.shop_list{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    margin-top: 1px;
+}
+.shop_list .head_select{
+    min-height: 40px;
+    background-color: #fff;
+    line-height: 40px;
+
+}
+.shop_list .tit_check{
+    background: url("../img/not_checkde.png");
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-size: 20px 20px;
+}
+.shop_list .tit_name::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../img/cartJd.png") no-repeat;
+    background-position: -36px -33px;
+    background-size: 60px 60px;
+    margin-left: 40px;
+    margin-top: 9px;
+    position: absolute;
+}
+.shop_list .tit_name .tit_txt{
+    width: 50%;
+    display: block;
+    float: right;
+    padding-right: 62px;
+    position: relative;
+    font-size: 12px;
+    color: #999;
+    line-height: 39px;
+    text-align: -webkit-right;
+}
+.shop_list .tit_name .tit_txt::before{
+    content: '';
+    background: url("../img/jd_freepost.png") no-repeat;
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    margin-top: 14px;
+    right: 114px;
+    background-size: 12px 13px;
+}
+.shop_list .float_right{
+    position: absolute;
+    width:100%;
+    text-align: -webkit-right;
+    font-size: 12px;
+    color: #e4393c;
+    line-height: 39px;
+    padding-right: 11px;
+}
+.shop_list .float_right::before{
+    content: "|";
+    padding-right: 52px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: #999;
+}
+.shop_list .tit_name .name{
+    width: 100%;
+    display: block;
+    padding-left: 65px;
+    font-size: 16px;
+    position: absolute;
+}

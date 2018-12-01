@@ -1,0 +1,130 @@
+.body-login:before {
+    background: url(../img/login01.jpeg) center top;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+body{
+    overflow: hidden !important; 
+}
+a {
+    /* color: #62a8ea; */
+    /* text-decoration: none; */
+}
+[class^=icheckbox_]+label, [class^=iradio_]+label {
+    margin: 0 0 0 5px;
+    vertical-align: -1px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0;
+}
+.page{
+    height: 510px;
+    padding-right: 500px;
+    background-color: transparent !important;
+}
+.page-left-info p {
+    opacity: .6;
+    max-width: 650px;
+    color: #000;
+    font-size: 20px;
+}
+.page-left-info .brand-text{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 11px 0;
+    color: #000;
+}
+.page-left-info{
+    margin: 220px 100px 0 90px;
+    float: left;
+}
+.page-right-login{
+    background: #fff;
+    color: #76838f;
+    min-height: 100%;
+    padding: 130px 60px 180px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+form{
+    width: 350px;
+    margin: 30px 0 20px;
+}
+.input-group .form-control{
+    margin-bottom: 15px;
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 25px;
+}
+.btn-group{
+    color: #fff;
+    background-color: #62a8ea;
+    border-color: #62a8ea;
+}
+
+.icheckbox_flat-grey{
+    background-position: 0 0;
+}
+.icheckbox_flat-grey, .iradio_flat-grey {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url(../img/login-grey.png) no-repeat;
+    border: none;
+}
+.checked{
+    background-position: -22px 0;
+}
+.page-copyright {
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    margin: 80px 0;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    -webkit-transform: translate(-50%, 0px);
+    color: #37474f;
+    font-size: 12px;
+    letter-spacing: 1px;
+}

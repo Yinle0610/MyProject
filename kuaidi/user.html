@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ais用户页面</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/site.min.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-mega">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle navbar-menubar" id="menu">
+                <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#userinfo" aria-expanded="false">
+                <span class="icon fa-user"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> <img
+                    title="ais会员系统" src="img/logo1.PNG" width="63px" style="margin-top: -15px"
+                    class="navbar-brand-logo"> <span class="navbar-brand-text" style="float: left;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: -38px;
+    color: #fff;">ais会员系统</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="userinfo">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="navbar-avatar dropdown-toggle">
+				     <span class="avatar">
+						   <img alt="..." src="img/23.jpg">
+					</span> <span class="user-name"> 18086440421 </span>
+                </a></li>
+                <!-- 从这里开始是加的东西 -->
+                <li class="dropdown"  id="myDropdown">
+                    <a data-toggle="dropdown" href="javascript:void(0)" title="消息" >
+                        <i class="icon fa-envelope-o" aria-hidden="true"></i>
+                        <span class="badge badge-danger up mes-num" id="badgeup">1</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right dropdown-menu-media">
+
+                        <li class="dropdown-menu-header" >
+                            <h5>您有<span class="mes-num">1</span>条新消息</h5>
+                            <button  class="btn btn-primary btn-xs"  data-message="all">标记所有已读</button>
+                        </li>
+                        <li class="list-group"  id="messagebox">
+                            <div>
+                                <div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-menu-footer" role="presentation">
+                            <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                                <i class="icon wb-settings" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                查看所有消息
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="login.html" style="color: #fff;margin-right: 15px;margin-top: 5px;">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="site-menubar navbar-nav">
+    <div class="site-menubar-body">
+        <ul class="site-menu">
+            <li class="site-menu-item">
+                <a href="index.html">
+                    <i class="icon" aria-hidden="true" title="10000"></i>
+                    <span class="site- menu-title">首页</span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul></li>
+            <li class="site-menu-item">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon" aria-hidden="true"  title="40000"></i>
+                    <span class="site-menu-title">我要寄件</span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">普通寄件</a></li>
+                    <li><a href="#">批量寄件</a></li>
+                    <li><a href="#">国际寄件</a></li>
+                </ul></li>
+            <li class="site-menu-item">
+                <a href="#"><i class="icon" aria-hidden="true" title="30000"></i><span class="site-menu-title">我要查件</span></a>
+                <ul class="dropdown-menu">
+                </ul></li>
+            <li class="site-menu-item">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon" aria-hidden="true"  title="50000"></i>
+                    <span class="site-menu-title">我的订单</span>
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">月结对账</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">批量导入</a></li>
+                    <li><a href="#">COD对账单</a></li>
+                </ul></li>
+            <li class="site-menu-item">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon" aria-hidden="true" title="60000"></i><span class="site-menu-title">会员服务</span><span class="caret"></span></a >
+                <ul class="dropdown-menu">
+                    <li><a href="#">我的理赔</a></li>
+                    <li><a href="#">我的查件</a></li>
+                    <li><a href="#">我的投诉</a></li>
+                    <li><a href="#">我的催件</a></li>
+                    <li><a href="http://www.ais.net.cn/gw/service/onlineserviceNew.html" target="_blank">在线客服</a></li></ul></li>
+            <li class="site-menu-item">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="icon" aria-hidden="true"  title="20000"></i><span class="site-menu-title">用户信息</span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" target="_blank">邀请好友</a></li>
+                    <li><a href="#">地址管理</a></li>
+                    <li><a href="#">密码修改</a></li>
+                    <li><a href="#">基本信息</a></li>				</ul></li>
+            <li class="site-menu-item">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"
+                   role="button" aria-haspopup="true" aria-expanded="false"> <i
+                        class="icon" aria-hidden="true"  title="90000"></i><span class="site-menu-title">我的财富</span><span
+                        class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">流量信息</a>
+                    </li>
+                    <li><a href="#">我的抵用券</a>
+                    </li>
+                    <li><a href="#">积分信息</a>
+                    </li>
+                </ul></li>
+            <li class="site-menu-item">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"
+                   role="button" aria-haspopup="true" aria-expanded="false"> <i
+                        class="icon" aria-hidden="true"  title="130000"></i><span class="site-menu-title">发票管理</span><span
+                        class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">申请开票</a>
+                    </li>
+                    <li><a href="#">开票记录</a>
+                    </li>
+                    <li><a href="#">发票抬头</a>
+                    </li>
+                </ul></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="page">
+    <div class="showpic">
+        <ul>
+            <li class="activeImg" style="opacity: 1; z-index: 1; background-image:url(img/user/header-6.jpg)"></li>
+        </ul>
+    </div>
+    <div class="cover-info">
+        <div class="container">
+            <div class="my-avatar">
+				<span class="avatar">
+						<img alt="..." src="img/23.jpg">
+					 <label class="badge">学徒</label>
+				</span>
+            </div>
+            <div class="name">
+                <a href="#">18086440421</a>
+            </div>
+            <ul class="cover-nav">
+                <li class="cover-ais-x hidden-xs">
+                    <p>信息完整度</p>
+                    <p>45%<a href="#">完善信息送积分</a>
+                    </p>
+                    <div class="progress info-w progress-sm">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+                    </div>
+                </li>
+                <li class="cover-ais-vip hidden-sm hidden-xs">
+                    <p>
+                        会员成长 <a class="pull-right"
+                                href="#">积分规则</a>
+                    </p>
+                    <p>
+                        升级后积分 <span class="text-success">+ 100</span>，赶紧赚积分吧！
+                    </p>
+                    <div class="progress progress-sm tooltip-info"
+                         data-toggle="tooltip" data-placement="bottom"
+                         title="当前经验：100 升级还需：901">
+                        <div id="maypoint" data-point="100"
+                             data-nextpoint="901"
+                             class="progress-bar progress-bar-info progress-bar-striped active"
+                             role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                             style="width: 0"></div>
+                    </div>
+                </li>
+                <!-- <li class="cover-ais-vip">
+             <p>每日签到</p>
+           </li> -->
+                <li class="cover-coupon" data-count=".badge" data-from="0"
+                    data-to="100"
+                    data-separator="" data-duration="2">
+                    <p>可用积分</p> <a href="#" class="badge">100</a>
+                </li>
+                <li class="cover-integral" data-count=".badge" data-from="0"
+                    data-to="100" data-separator=""
+                    data-duration="2">
+                    <p>历史总积分</p> <a href="#" class="badge">100</a>
+                </li>
+                <li class="cover-coupon">
+                    <p>签到赚积分</p>
+                    <button class="btn btn-info m_top_6" type="button" data-toggle="modal" data-target="#mycoupon" id="mycoupon_button">立即签到</button></li>
+                <li class="cover-coupon">
+                    <p>送好友积分</p>
+                    <button class="btn btn-primary m_top_6" type="button" data-toggle="modal" data-target="#point_send" id="point_button">积分互赠</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ais-search">
+            <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+                <a href="#"
+                   class="btn btn-primary btn-lg btn-block"> <i
+                        class="m_right_10" aria-hidden="true"></i>邀请好友
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <a href="#"
+                   class="btn btn-primary btn-lg btn-block"> <i
+                        class="icon fa-send-o" aria-hidden="true"></i>&nbsp;我要寄件
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+                <form method="post" id="history_search"
+                      action="#">
+                    <div class="input-group input-group-lg">
+                        <input name="mailno" id="mailno" value=""
+                               class="form-control" placeholder="请输入运单号" /> <span
+                            class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+                                <i class="icon fa-search" aria-hidden="true"></i> 查询
+                            </button>
+						</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container m_top_30">
+        <div class="ais-box">
+            <h5>待处理事项</h5>
+            <div class="panel panel-default">
+                <div class="panel-heading">我的投诉反馈</div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>订单号</th>
+                            <th>快递单号</th>
+                            <th>取件网点</th>
+                            <th>下单时间</th>
+                            <th>投诉时间</th>
+                            <th>企业处理状态</th>
+                            <th>客服代表</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="page-copyright">
+                    <p>© 2018. All RIGHT RESERVED. ais速递有限公司  版权所有
+                        <a target="_blank" href="http://www.miitbeian.gov.cn/">鄂ICP备18086400421号</a>
+                        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253325994'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D1253325994%26l%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p class="ais-tel">
+                    <a target="_blank" class="link-ais" href="http://www.ais.net.cn/">ais官网</a>
+                    客服服务热线：18086400418
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+<!-- js plugins  -->
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/page.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".showpic").slideJ({
+            leftBtn:".banner-Left",
+            rightBtn:".banner-Right",
+            time: 6000,
+            speed: 1500,
+            hoverPause:false,
+            type:"opacity",
+        });
+
+        $("#history_search").submit( function () {
+
+            var mailno = $("#mailno");
+            var  strValue =  mailno.val();
+            //去掉值的首尾空格
+            strValue = $.trim(strValue);
+            //运单查询验证
+            if (strValue == "") {
+                mailno.attr("data-content","请输入您的快件单号");
+                mailno.attr("data-placement","bottom");
+                mailno.popover('show');
+                return false;
+            }
+            strValue = strValue.toUpperCase();
+            strValue = strValue.replace(/\s+/g, "/");
+            strValue = strValue.replace(/\n/g, "/");
+            var arr1 = strValue.split("/");
+            if (arr1.length > 1) {
+                mailno.attr("data-content","一次最多查询1个单号");
+                mailno.attr("data-placement","bottom");
+                mailno.popover('show');
+                return false;
+            }
+            else {
+                var reg = /^[A-Za-z0-9]{10,12}$/;
+                var reg1 = /^88[A-Za-z0-9]{16}$/;
+                for (var i = 0; i < arr1.length; i++) {
+                    if (arr1[i].length==18) {
+                        if (!reg1.test(arr1[i])) {
+                            mailno.attr("data-content","请输入正确的快件单号");
+                            mailno.attr("data-placement","bottom");
+                            mailno.popover('show');
+                            return false;
+                        }
+                    }
+                    else if (!reg.test(arr1[i])) {
+                        mailno.attr("data-content","请输入正确的快件单号");
+                        mailno.attr("data-placement","bottom");
+                        mailno.popover('show');
+                        return false;
+                    }
+                }
+            }
+            return true;
+        });
+
+
+        $("#mycoupon").on("hidden.bs.modal", function() {
+            $(this).removeData("bs.modal");
+            window.location.reload();
+            if($(this).find(".ais-message").length > 0){
+
+            }
+        });
+    });
+
+    $("#mycoupon_button").on("click", function() {
+        $("#mycoupon_button").attr("href", "/checkIn/checkIn.htm");
+    });
+
+
+    $(function(){
+        $("#point_send").on("hidden.bs.modal", function() {
+            $(this).removeData("bs.modal");
+            if($(this).find(".ais-message").length > 0){
+                window.location.reload();
+            }
+        });
+    });
+
+    $("#point_button").on("click", function() {
+        $("#point_button").attr("href", "/point_send/point_send.htm");
+    });
+
+
+
+    (function(document, window, $) {
+        'use strict';
+        $('[data-toggle="tooltip"]').tooltip();
+
+
+        var $point = parseInt($("#maypoint").attr("data-point")), $nextpoint = parseInt($(
+                "#maypoint").attr("data-nextpoint"));
+        var $uplive = $point + $nextpoint;
+        var widthval = Math.round($point / $uplive * 10000) / 100.00;
+        widthval = parseInt(widthval) + "%"
+        $("#maypoint").css("width", widthval);
+
+        var sysinfo = $(".system-info");
+        if (sysinfo.length > 0) {
+            sysinfo.slideDown().find(".close").on("click", function() {
+                sysinfo.slideUp();
+            });
+        }
+
+        $("#aiswd")
+                .on(
+                        "show.bs.modal",
+                        function(event) {
+                            var modal = $(this);
+                            var button = $(event.relatedTarget);
+                            var stationCode = button.attr("value");
+                            modal.find('.modal-title').text(
+                                    button.text() + "圆通欢迎您");
+
+                            $
+                                    .ajax({
+                                        url : 'http://116.228.70.245:8088/BDM/OutWebService/StationPlace/FindStatonPage',
+                                        data : {
+                                            'StationCode' : stationCode
+                                        },
+                                        dataType : "jsonp",
+                                        jsonp : 'callback',
+                                        contenttype : "application/x-www-form-urlencoded;charset=utf-8",
+                                        success : function(result) {
+                                            if (result.Msg != null
+                                                    && result.Msg != '') {
+                                                setTimeout(
+                                                        function() {
+                                                            $("#errorwd")
+                                                                    .removeClass(
+                                                                            "hidden")
+                                                                    .text(
+                                                                            result.msg);
+                                                        }, 200);
+                                                return false;
+                                            }
+
+                                            var data = result.Data;
+                                            if (data == null
+                                                    || data.length == 0) {
+                                                setTimeout(
+                                                        function() {
+                                                            $("#errorwd")
+                                                                    .removeClass(
+                                                                            "hidden")
+                                                                    .text(
+                                                                            result.msg);
+                                                        }, 200);
+                                                return false;
+                                            } else {
+                                                var codes = data[0].Codes;
+                                                var areaall = data[0].PathName
+                                                        .split(',');
+                                                $("#trArea").html(
+                                                        areaall[1]);
+                                                $("#trJinli")
+                                                        .html(
+                                                                data[0].HandlerName);
+                                                $("#trChuanz").html(
+                                                        data[0].Fax);
+                                                $("#trEmail").html(
+                                                        data[0].Email);
+                                                $("#trKef").html(
+                                                        data[0].Msn);
+                                                $("#trNumber").html(
+                                                        data[0].QueryTel);
+                                                $("#trZcPsArea").html(
+                                                        data[0].ServeArea);
+                                                $("#trTeSePsArea")
+                                                        .html(
+                                                                data[0].SpecialArea);
+                                                $("#trSelfArea").html(
+                                                        data[0].SelfArea);
+                                                $("#trBips").html(
+                                                        data[0].StopArea);
+                                                $("#trMap")
+                                                        .html(
+                                                                "<iframe id='iframemap' src='http://116.228.70.238:8801/ais_GPSITF_WEB/PlatformService?AppId=D7EFC29F0583C0E1E040010A9CCB1ED8&platform=GisExpressRange&code="
+                                                                + stationCode
+                                                                + "&codes="
+                                                                + codes
+                                                                + "&width=680px&height=400px'></iframe>");
+                                                $("#trTeshu")
+                                                        .html(
+                                                                data[0].EspecialServe);
+                                                $("#trRemark").html(
+                                                        data[0].Remark);
+                                                $("#trEdittime")
+                                                        .html(
+                                                                data[0].CreateTimeString);
+                                            }
+
+                                        }
+
+                                    });
+
+                        });
+
+    })(document, window, jQuery);
+</script>
+

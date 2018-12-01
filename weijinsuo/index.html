@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  	<!-- 设置当前HTML文件的字符编码 -->
+    <meta charset="utf-8">
+    <!-- 设置浏览器的兼容模式版本(让IE使用最新的渲染引擎工作) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 声明当前网页在移动端浏览器中展示的相关设置 当页面宽度超出设备，浏览器内部虚拟一个页面容器，将这个页面容器缩放到设备这么到，然后展示-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>仿微金所网页</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+
+    <!-- 条件注释的作用就是当判断条件满足时，就会执行注释中的HTML代码，不满足时就会当做注释忽视掉 -->
+
+    <!-- html5shiv让浏览器可以识别HTML5的新标签 -->
+    <!-- respond让低版本的浏览器可以使用CSS3的媒体查询 -->
+    <!--[if lt IE 9]
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.min.js"></script>
+    ![endif]-->
+<!-- 自己写的文件默认放在最下面 -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- 头部区域 -->
+    <header id="header">
+      <div class="topbar">
+        <div class="container visible-md visible-lg">
+          <div class="row">
+            <div class="col-md-4">
+              <span class="top-phone">
+              <i class="icon icon-telephone"></i>
+              客服电话：4006-89-4006 / 010-57648460/（9:00~21:00）
+              </span>
+              <span class="line">|</span>
+              </div>
+            <div class="col-md-1">
+              <a href="#">
+              <i class="icon icon-service-o"></i>
+              在线客服
+              <span class="line">|</span>
+              </a></div>
+            <div class="col-md-2">
+            <a href="#" class="my-phone">
+            <i class="icon icon-mobile-2"></i>
+              移动客户端
+            <span class="line">|</span>
+            <img src="img/app-qrcode.jpg" width="120px" height="136px" alt="扫一扫">
+              </a>
+            </div>
+            <div class="col-md-2">
+            <a href="#" class="my-wechat">
+            <i class="icon icon-wechat-o"></i>
+              <span >微信公众号二维码</span>
+              <span class="line">|</span>
+              <img src="img/wx.jpg" width="130px" height="136px" alt="扫一扫">
+            </a></div>
+            <div class="col-md-1"><a href="#">
+              <i class="icon icon-money-bag"></i>
+              财富登录
+            </a>
+            </div>
+            <div class="col-md-2 help-center"><a href="#">帮助中心</a>
+            <span class="line" style="left:0px">|</span>
+            <a href="#">注册</a>
+              &nbsp;
+              <a href="#">登录</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <nav class="navbar navbar-default navbar-static-top">
+     <div class="container nav-menu">
+       <div class="navbar-header">
+       <a class="navbar-brand" href="#">
+       <li class="icon-logo"></li>
+       <li class="icon-weijinsuo"></li></a>
+     </div>
+       <div class="navbar-right visible-md visible-lg">
+       <ul class="nav navbar-nav navbar-right">
+       <li><a href="#">首页</a></li>
+       <li><a href="#">我要投资</a></li>
+       <li><a href="#">长租公寓</a></li>
+       <li><a href="#">新手专区</a></li>
+       <li><a href="#">新闻公告</a></li>
+       <li><a href="#">信息披露</a></li>
+       <li><a href="#">投资者教育</a></li>
+       <li><a href="#">
+         <span class="account"></span>
+         我的账户</a></li>
+       </ul>
+        </div>
+      </div>
+    </nav> 
+  </header>
+  <div class="service">
+    <a href="Javascript:;" class="sobot">
+      <i class="icon icon-service-o"></i>在线客服   
+    </a>
+  </div>
+    <div class="rocketPar">
+      <a class="rocketLine icon-rocket" title="返回顶部"></a>
+    </div>
+    <!-- /头部区域 -->
+
+    <!-- 广告轮播 -->
+<section class="main_ad">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" style="background-image:url('img/1533809876330784.jpg');height:100%">
+    </div>
+    <div class="item" style="background-image:url('img/15248079301564672.jpg');height:100%">     
+      </div>
+    <div class="item" style="background-image:url('img/15156516506548029.jpg'); height:100%">
+      </div>
+    <div class="item" style="background-image:url('img/15008662575371747.jpg');height:100%">
+      </div>
+    <div class="item" style="background-image:url('img/15003731515312064.jpg');height:100%">
+    </div>
+    </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    </section>
+    <!-- /广告轮播 -->
+
+    <!-- 特色介绍 -->
+    <section>
+<div class="container-fluid bannerDown">
+  <div class="container">
+    <div class="left"><a href="#"><span>
+      <i class="icon-voice"></i>
+      公告:【微公告】 微金所连连支付充值通道暂停公告
+    </span></a></div>
+    <div class="right visible-md visible-lg"><a href=""><span><i class="icon-book"></i>2017年度运营报告</span></a></div>
+    <div class="right visible-md visible-lg" style="padding-right:30px;"><a href=""><span>网络借贷暂行办法</span></a></div>   
+  </div>
+  <div class="container">
+  <div class="col-md-8 visible-md visible-lg">
+    <div class="unit"><span><i class="icon-usd-barchart"></i></span>
+        <h3><a href="#">A轮3.2亿元融资</a></h3>
+        <p>上市系·国资系·风投系</p>
+      </div>
+    <div class="unit"><span><i class="icon-pay-square"></i></span>
+        <h3><a href="#">银联支付</a></h3>
+        <p>全程保障资金安全</p>
+      </div>
+    <div class="unit"><span><i class="icon-usd"></i></span>
+        <h3><a href="#">银行资金存管</a></h3>
+        <p>资金保障再进一步</p>
+      </div>
+    <div class="unit"><span><i class="icon-insurance"></i></span>
+        <h3><a href="#">安全保障</a></h3>
+        <p>八重安全保障机制</p>
+      </div>
+  </div>
+  <div class="col-md-4">
+    <div class="left visible-md visible-lg">
+      <p>平台上线时间</p>
+      <h3 id="upLine">2013/11/15</h3>
+      <div class="blank"> </div>
+      <p>已归还本息（元）</p>
+      <h3 id="userNum">9,770,824,508</h3>
+    </div>
+    <div class="right">
+      <p>累计成交额（元）</p>
+      <h3 id="totalDeal">11,014,260,017</h3>
+      <div class="blank"> </div>
+      <p>已为用户赚取收益（元）</p>
+      <h3 id="userNum">376,515,879</h3>
+  </div>
+  <div class="clearfix"></div>
+  </div>
+</div>
+</div>
+
+      
+    </section>
+    <!-- 特色介绍 -->
+
+
+    <!-- 产品推荐 --> 
+    <section>
+   
+<div class="container-fluid mainParent">
+  <div class="container main">
+      <div class="media">
+        <div class="media-left">
+          <div class="onPic" style="background:url('img/apartment.png')">
+            <h3>长租公寓</h3>
+          </div>     
+       <div class="strip">
+         <div class="left"></div>
+         <div class="right"></div>
+         <div class="topLeft" style="height:5px;"></div>
+         <div class="topRight" style="height:5px;"></div>
+       </div>
+        <div class="content media-body info">
+          <div class="topLine"></div>
+          <div class="chanping">
+          <h4 class="media-heading" id="noviceName">长租公寓-云海百川1期
+            <span class="recommendTag">明星产品</span></h4>
+            <p>月付息到期还本</p>
+          <ul class="item">
+            <li>
+              <span class="rate">
+              <b>9</b>
+            <sub class="sub">%</sub></span>
+            <br>
+            测算年化收益率
+          </li>
+            <li>
+              <span>
+              <b>185</b>
+            <sub class="sub">天</sub></span>
+            <br>
+            借款期限
+          </li>
+            <li>
+              <span>
+              <b>50</b>
+            <sub class="sub">万</sub></span>
+            <br>
+            筹集资金
+          </li>
+            <li>
+              <div class="starbg" data-original-title="三星级">
+                <div class="star-gray" style="background: url('img/star-gray.png') no-repeat;height:18px;"></div>
+                <div class="star-active" style="background: url('img/star-active.png') no-repeat;height:18px;" tar="3" ></div>
+                <div class="newApartmentTips">产品星级</div>
+              </div>
+          </li>
+            <li class="specialProgress">
+             <dd class="progress">
+               <span class="progress-bar" style="width:100%"></span>
+             </dd>
+             <div class="newApartmentTips">投资进度100%</div>
+          </li>
+          </ul>
+          <div class="clearfix"></div>
+        <div class="investButton">
+          <span>立即投资</span>
+        </div>
+       </div>      
+        </div>
+        </div>
+         <div class="media-right">
+           <div class="topBlock">
+             <img src="img/top.png" alt="">
+             <div class="topText">
+               <p>移动理财</p>
+               <p>你的专属掌上神器</p>
+             </div>
+           </div>
+           <div class="bottomBlock">
+             <div class="innerLeft">
+               <img src="img/wx.jpg" alt="">
+               <p>微信公众号二维码</p>
+             </div>
+             <div class="innerRight">
+               <img src="img/downloadApp.png" alt="">
+               <p>下载APP二维码</p>
+             </div>
+           </div>
+         </div> 
+      </div>
+    </div> 
+
+<!-- short -->
+    <div class="container short">
+      <div class="media">
+        <div class="media-left">
+          <div class="onPic" style="background:url('img/short.png')">
+            <h2>短期灵活</h2>
+            <p class="tag">1-3个月期限</p>
+            <p class="tail">
+              <a href="">
+                <span class="left">预约投标</span>
+              </a>
+              <a href="">
+                <span class="right">查看更多</span>
+              </a>
+            </p>
+          </div>     
+       <div class="strip">
+         <div class="left"></div>
+         <div class="right"></div>
+         <div class="topLeft" style="height:5px;"></div>
+         <div class="topRight" style="height:5px;"></div>
+       </div>
+        <div class="content media-body info">
+          <div class="topLine"></div>
+           <div class="investItem">
+            <div class="shadow"></div>
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="微周转-辰时实业3期">
+                微周转-辰时实业3期
+              </span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="机构融资人">机</span>
+            </h3>
+            <ul class="item up">
+              <li><span class="grayColor">6.5</span>
+                  <sub class="ratePer grayColor">%</sub>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">29</span>
+                <sub class="sub">天</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">50</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:83.33%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">100</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:100%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>
+          <div class="dashedVertical">
+            <span class="dashedShadow"></span>
+          </div>
+          <div class="investItem">
+            <div class="shadow"></div>
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="微周转-英瑞畅源1期">
+                微周转-英瑞畅源1期
+              </span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="机构融资人">机</span>
+            </h3>
+            <ul class="item up">
+              <li><span class="grayColor">6.5</span>
+                  <sub class="ratePer grayColor">%</sub>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">29</span>
+                <sub class="sub">天</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">50</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:83.33%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">100</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:100%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>
+           <div class="dashedVertical">
+            <span class="dashedShadow"></span>
+          </div>
+         <div class="investItem">
+            <div class="shadow"></div>
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="微周转-博雅睿纳3期">
+                微周转-博雅睿纳3期
+              </span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="机构融资人">机</span>
+            </h3>
+            <ul class="item up">
+              <li><span class="grayColor">6.5</span>
+                  <sub class="ratePer grayColor">%</sub>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">27</span>
+                <sub class="sub">天</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">50</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:83.33%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">100</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:100%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>                               
+       </div>        
+        </div>
+        </div>
+    </div>
+<!-- /short --> 
+
+<!-- medium -->    
+     <div class="container medium">
+      <div class="media">
+        <div class="media-left">
+          <div class="onPic">
+            <h2>中期稳健</h2>
+            <p class="tag">4-9个月期限</p>
+            <p class="tail">
+              <a href="">
+                <span class="left">预约投标</span>
+              </a>
+              <a href="">
+                <span class="right">查看更多</span>
+              </a>
+            </p>
+          </div>     
+       <div class="strip">
+         <div class="left"></div>
+         <div class="right"></div>
+         <div class="topLeft" style="height:5px;"></div>
+         <div class="topRight" style="height:5px;"></div>
+       </div>
+        <div class="content media-body info">
+          <div class="topLine"></div>
+           <div class="investItem">
+            <div class="shadow"></div>
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="易企贷-金凯嘉华2期">
+                易企贷-金凯嘉华2期
+              </span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="机构融资人">机</span>
+            </h3>
+            <ul class="item up">
+              <li><span class="grayColor">9.5</span>
+                  <sub class="ratePer grayColor">%</sub>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">8</span>
+                <sub class="sub">个月</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">50</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:75%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">100</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:100%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>
+          <div class="dashedVertical">
+            <span class="dashedShadow"></span>
+          </div>
+          <div class="investItem">
+            <div class="shadow"></div>
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="金房宝-房抵项目五百五十六期">
+                金房宝-房抵项目五百五十六期
+              </span>
+            </h3>
+            <ul class="item up">
+              <li><span class="grayColor">8.5</span>
+                  <sub class="ratePer grayColor">%</sub>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">133</span>
+                <sub class="sub">天</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">20</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:58.33%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">100</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:100%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>
+           <div class="dashedVertical">
+            <span class="dashedShadow"></span>
+          </div>
+         <div class="investItem">
+            <div class="shadow"></div>
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="金房宝-房抵项目五百五十四期 ">
+                金房宝-房抵项目五百五十四期  
+              </span>
+            </h3>
+            <ul class="item up">
+              <li><span class="grayColor">8.5</span>
+                  <sub class="ratePer grayColor">%</sub>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">139</span>
+                <sub class="sub">天</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">20</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:53.33%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">100</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:100%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>                               
+       </div>        
+        </div>
+        </div>
+    </div>
+<!-- /medium -->  
+
+<!-- long -->    
+     <div class="container long">
+      <div class="media">
+        <div class="media-left">
+          <div class="onPic">
+            <h2>长期省心</h2>
+            <p class="tag">10个月以上期限</p>
+            <p class="tail">
+              <a href="">
+                <span class="left">预约投标</span>
+              </a>
+              <a href="">
+                <span class="right">查看更多</span>
+              </a>
+            </p>
+          </div>     
+       <div class="strip">
+         <div class="left"></div>
+         <div class="right"></div>
+         <div class="topLeft" style="height:5px;"></div>
+         <div class="topRight" style="height:5px;"></div>
+       </div>
+        <div class="content media-body info">
+          <div class="topLine"></div>
+           <div class="investItem">
+            <div class="shadow"></div>
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="微消费-丽人贷2037期">
+                微消费-丽人贷2037期
+              </span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="担保">保</span>
+            </h3>
+            <ul class="item up">
+              <li><span class="grayColor">11</span>
+                  <sub class="ratePer grayColor">%</sub>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">364</span>
+                <sub class="sub">天</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">3</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:91.67%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">100</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:100%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>
+          <div class="dashedVertical">
+            <span class="dashedShadow"></span>
+          </div>
+          <div class="investItem">
+            <div class="shadow"></div>
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="微消费-丽人贷2036期">
+                微消费-丽人贷2036期
+              </span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="担保">保</span>
+            </h3>
+            <ul class="item up">
+              <li><span class="grayColor">11</span>
+                  <sub class="ratePer grayColor">%</sub>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">364</span>
+                <sub class="sub">天</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">3</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:91.67%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">100</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:100%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>
+           <div class="dashedVertical">
+            <span class="dashedShadow"></span>
+          </div>
+         <div class="investItem">
+            <div class="shadow"></div>
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="微消费-丽人贷2035期">
+                微消费-丽人贷2035期
+              </span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="担保">保</span>
+            </h3>
+            <ul class="item up">
+              <li><span class="grayColor">11</span>
+                  <sub class="ratePer grayColor">%</sub>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">364</span>
+                <sub class="sub">天</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">3</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:91.67%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">100</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:100%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>                               
+       </div>        
+        </div>
+        </div>
+    </div>
+<!-- /long -->  
+<!-- resale -->    
+     <div class="container resale">
+      <div class="media">
+        <div class="media-left">
+          <div class="onPic">
+            <h2>微转让</h2>
+            <p class="tag">经常关注会有惊喜</p>
+            <p class="tail">
+              <a href="">
+                <span class="left">预约投标</span>
+              </a>
+              <a href="">
+                <span class="right">查看更多</span>
+              </a>
+            </p>
+          </div>     
+       <div class="strip">
+         <div class="left"></div>
+         <div class="right"></div>
+         <div class="topLeft" style="height:5px;"></div>
+         <div class="topRight" style="height:5px;"></div>
+       </div>
+        <div class="content media-body info">
+          <div class="topLine"></div>
+           <div class="investItem"> 
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="微收益-医美贷七百一十八期-10">
+                微收益-医美贷七百一十八期-10
+              </span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="微转让">转</span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="实地认证">实</span>
+            </h3>
+            <ul class="item up">
+              <li><span>50</span>
+                  <sub class="ratePer">%</sub>
+                  <span class="originalRate">
+                    原:
+                    <del>11%</del>
+                  </span>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">13</span>
+                <sub class="sub">天</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">2.68</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:91.67%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">1</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:1%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>
+          <div class="dashedVertical">
+            <span class="dashedShadow"></span>
+          </div>
+          <div class="investItem"> 
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="易投宝L-111期-3">易投宝L-111期-3 
+              </span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="微转让">转</span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="机构融资人">机</span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="月月盈转让产品">月</span>
+            </h3>
+            <ul class="item up">
+              <li><span>53.08</span>
+                  <sub class="ratePer ">%</sub>
+                  <span class="originalRate">
+                    原:
+                    <del>11.3%</del>
+                  </span>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b ">81</span>
+                <sub class="sub">天</sub>
+                 
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">0.05</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:91.67%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">0</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:0%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>
+           <div class="dashedVertical">
+            <span class="dashedShadow"></span>
+          </div>
+         <div class="investItem">
+            <a href="" class="dispatchUrl">
+            <div class="status7"></div>
+            <h3 class="name">
+              <span class="nameBlock" title="微收益-医美贷五百四十六期-3">
+                微收益-医美贷五百四十六期-3
+              </span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="微转让">转</span>
+              <span class="labelTag" data-toggle="tooltip" data-placement="bottom" title="实地认证">实</span>
+            </h3>
+            <ul class="item up">
+              <li><span>15.63</span>
+                  <sub class="ratePer">%</sub>
+                  <span class="originalRate">
+                    原:
+                    <del>11.2%</del>
+                  </span>
+                  <span>测算年化收益率</span>
+              </li>
+              <li>
+                <span class="b grayColor">43</span>
+                <sub class="sub">天</sub>
+                <span>借款期限</span>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="item down">
+              <li>
+                <dt>筹集金额（元）</dt>
+                <dd>
+                  <b class="dd-mp">2.2</b>
+                  <sub>万</sub>
+                </dd>
+              </li>
+              <li>
+                <dt>产品星级</dt>
+                <dd>
+                  <div class="starbg">
+                    <div class="star-gray"></div>
+                    <div class="star-active" style="width:91.67%"></div>
+                  </div>
+                </dd>
+              </li>
+              <li>
+                <dt class="progressTitle">投资进度
+                  <span class="dd-mp">0</span>
+                  <span>%</span>
+                </dt>
+                <dd class="progress">
+                  <span class="progress-bar" style="width:0%"></span>
+                </dd>
+              </li>
+            </ul>
+            </a>
+          </div>                               
+       </div>        
+        </div>
+        </div>
+        <div class="clearfix"></div>
+    </div> 
+<!-- resale -->
+
+<!-- news -->
+  <div class="container main">
+      <div class="media news">
+        <div class="media-left">
+          <h4>媒体报道
+            <a href="#" target="_blank">更多</a>
+          </h4>
+          <div class="reportItem">
+            <div class="img" style="background-image:url(img/15312901538774545.jpg)"></div>
+            <p><a href="#">【腾讯网】获香港主板上市公司战略投资 微金所成风投热点平台</a>
+            <span>2018-07-11</span>
+            </p>
+            <p class="excerpt">随着2018年7月的到来，互联网金融领域再次曝出重磅资本动态。近日，媒体在分析港股市场走势时，特别关注了香港主板上市公司鹰力投资股份有限公司（股票代码00901）的相关动态。</p>
+          </div>
+          <div class="reportItem">
+            <div class="img" style="background-image:url(img/15312897362356887.jpg)"></div>
+          <p><a href="#">
+            【凤凰网】微金所：在FinTech持续投入，坚定打造金融核心竞争力</a>
+            <span>2018-07-09</span>
+          </p>
+          <p class="excerpt">
+            关于金融科技的未来规划，微金所CTO刘恒阳表示，技术是个双刃剑，它没有对错，运用它的企业必须有其价值底线。运用各种先进的技术做好风控、服务好客户不仅仅是对投资人的一份坚实的承诺，也是对金融市场稳定长远发展的一份贡献。
+          </p>
+          </div>
+          </div>
+         <div class="media-right">
+            <h4>微金所头条
+              <a href="#">更多</a>
+            </h4>
+            <p>
+              <a href="#">【微公告】微金所连连支付充值通道暂停公告</a>
+            </p>
+            <p>
+              <a href="#">
+              【微还款】2018年7月9日-2018年7月15日还款公告
+              </a>
+            </p>
+            <p>
+              <a href="#">
+              【微公告】微金所债权转让规则调整公告
+              </a>
+            </p>
+            <p>
+              <a href="#">
+              【微公告】2018年7月11日微金所平台系统升级维护公告
+              </a>
+            </p>
+            <p>
+              <a href="#">
+              【微公告】2018年7月9日微金所平台系统升级维护公告
+              </a>
+            </p>
+            <p>
+              <a href="#">
+              【微还款】2018年7月2日-2018年7月8日还款公告
+              </a>
+            </p>
+           </div>
+           
+         </div> 
+    
+<!--/ news -->
+  </div>
+        </div>
+   </section>
+  
+    <!-- footer -->
+<div class="footer-box">
+  <div class="footer-cot">
+      <div class="col-md-4 wjs">
+        <p class="footer-logo">
+          <i class="icon-logo">&nbsp;</i>&nbsp;
+          <i class="icon-weijinsuo">&nbsp;</i>
+        </p>
+        <h3>
+          4006-89-4006
+          <br>
+          010-57648460
+        </h3>
+        <p class="footer-service">
+          <span class="service-time">服务热线(服务时间:9:00----21:00)</span>
+          <br>
+          <a href="#" class="sobot">
+          <i class="icon-service icon-if"></i>
+          在线客服
+          </a>
+          <br>
+          关注我们：
+          <i class="icon-wechat icon-if">
+            <img class="img-wx" src="img/wx.jpg" alt="">
+          </i>
+          <a href="#" class="icon-weibo icon-if"></a>
+          <a href="#" class="icon-gswj">
+            <img src="img/gswj.png" alt="">
+          </a>
+        </p>      
+      </div>
+      <div class="col-md-4 footer-about">
+        <dl>
+          <dt>
+            信息披露
+          </dt>
+          <dd>
+            <a href="#">公司介绍</a>
+          </dd>
+          <dd>
+            <a href="#">管理团队</a>
+          </dd>
+          <dd>
+            <a href="#">友情链接</a>
+          </dd>
+          <dd>
+            <a href="#">联系我们</a>
+          </dd>
+        </dl>
+
+        <dl class="fa-new">
+          <dt>
+            最新动态
+          </dt>
+          <dd>
+            <a href="#">媒体报告</a>
+          </dd>
+          <dd>
+            <a href="#">公司动态</a>
+          </dd>
+          <dd>
+            <a href="#">利率报告</a>
+          </dd>
+          <dd>
+            <a href="#">更新历史</a>
+          </dd>
+        </dl>
+
+
+        <dl>
+          <dt>
+            帮助中心
+          </dt>
+          <dd>
+            <a href="#">新手指引</a>
+          </dd>
+          <dd>
+            <a href="#">安全保障</a>
+          </dd>
+          <dd>
+            <a href="#">操作指南</a>
+          </dd>
+          <dd>
+            <a href="#">VIP投资人</a>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-4 footer-other">
+        <h3>合作伙伴</h3>
+        <p>
+          <a href="#">
+          <span class="sm10 ics1">
+          <i class="icon-union-pay">&nbsp;</i>
+          </span>
+          </a>
+          <a href="#">
+          <span class="ics2">
+          <i class="icon-huaxing">&nbsp;</i>
+          </span>
+          </a>
+          <a href="#">
+          <span class="ics3">
+          <i class="icon-china-life">&nbsp;</i>
+          </span>
+          </a>
+          <a href="#">
+          <span class="smr0 ics4">
+          <i class="icon-reuters">&nbsp;</i>
+          </span>
+          </a>
+        </p>
+
+         <p>
+          <a href="#">
+          <span class="sm10 ics5">
+          <i class="icon-cfca">&nbsp;</i>
+          </span>
+          </a>
+          <a href="#">
+          <span class="ics6">
+          <i class="icon-baidu">&nbsp;</i>
+          </span>
+          </a>
+          <a href="#">
+          <span class="ics7">
+          <i class="icon-cis">&nbsp;</i>
+          </span>
+          </a>
+          <a href="#">
+          <span class="smr0 ics8">
+          <i class="icon-safe360">&nbsp;</i>
+          </span>
+          </a>
+        </p>
+      </div>
+  </div>
+  <div class="footer_bom">
+    <div class="bom-float">
+      <ul class="footer_info">
+        <li class="fi_pl0">
+          <a href="#">我要投资</a>
+        </li>
+        <li>
+          <a href="#">我要借款</a>
+        </li>
+        <li>
+          <a href="#">忘记密码</a>
+        </li>
+        <li>
+          <a href="#">如何提现</a>
+        </li>
+        <li class="fi_pr0">
+          <a href="#">登录</a>|<a href="#">注册</a> 
+        </li>
+      </ul>
+      <p id="comMaster" style="display:none">©版权所有©中微（北京）信用管理有限公司&nbsp;京ICP证&nbsp;140046号</p>
+      <p id="cnMaster">©版权所有©深圳微金所金融信息服务有限公司&nbsp;粤ICP备&nbsp;16000732号-1&nbsp;
+        <a href="#">
+          <img src="img/police.png">京公网安备 11010802024696号
+        </a></p>
+    </div>
+    <div class="footer_zs">
+      <a href="#" style="margin-left:-12px;">
+        <span class="span-10 fs1">
+          <i class="icon-icann">&nbsp;</i>
+        </span>
+      </a>
+      <a href="#">
+        <span class="span-10 fs2">
+          <i class="icon-industry">&nbsp;</i>
+        </span>
+      </a>
+       <a href="#">
+        <img src="img/zx.jpg" style="position: relative;top: -11px;" onmouseover="this.src='img/zx-hover.jpg'" onmouseleave="this.src='img/zx.jpg'">
+      </a>
+      <a href="#">
+        <span class="fs3">
+          <i class="icon-360">&nbsp;</i>
+        </span>
+      </a>
+      <a href="#">
+        <span class="fs4">
+          <i class="icon-inquiry">&nbsp;</i>
+
+        </span>
+      </a>
+      <a href="#">
+        <span class="fs5">
+          <i class="icon-netChina">&nbsp;</i>
+
+        </span>
+      </a>
+      <a href="#">
+        <span class="span-10 fs6">
+          <i class="icon-trusted">&nbsp;</i>
+        </span>
+      </a>
+      <a href="#">
+        <span class="span-10 fs7">
+          <i class="icon-authentication">&nbsp;</i>
+        </span>
+      </a>
+      
+    </div>
+  </div>
+</div>
+    <!-- /footer -->
+
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="lib/jquery/jquery.js"></script>
+    <!-- 加载 Bootstrap的所有JavaScript插件。你也可以根据需要只加载单个插件。 -->
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

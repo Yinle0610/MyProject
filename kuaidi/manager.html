@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ais管理员页面</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/site.min.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-mega">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle navbar-menubar" id="menu">
+                <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#userinfo" aria-expanded="false">
+                <span class="icon fa-user"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> <img
+                    title="ais会员系统" src="img/logo1.PNG" width="63px" style="margin-top: -15px"
+                    class="navbar-brand-logo"> <span class="navbar-brand-text" style="float: left;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: -38px;
+    color: #fff;">ais管理员系统</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="userinfo">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="navbar-avatar dropdown-toggle">
+				     <span class="avatar">
+						   <img alt="..." src="img/23.jpg">
+					</span> <span class="user-name">管理员</span>
+                </a></li>
+                <!-- 从这里开始是加的东西 -->
+                <li class="dropdown"  id="myDropdown">
+                    <a data-toggle="dropdown" href="javascript:void(0)" title="消息" >
+                        <i class="icon fa-envelope-o" aria-hidden="true"></i>
+                        <span class="badge badge-danger up mes-num" id="badgeup">1</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right dropdown-menu-media">
+
+                        <li class="dropdown-menu-header" >
+                            <h5>您有<span class="mes-num">1</span>条新消息</h5>
+                            <button  class="btn btn-primary btn-xs"  data-message="all">标记所有已读</button>
+                        </li>
+                        <li class="list-group"  id="messagebox">
+                            <div>
+                                <div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-menu-footer" role="presentation">
+                            <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                                <i class="icon wb-settings" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                查看所有消息
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="login.html" style="color: #fff;margin-right: 15px;margin-top: 5px;">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="site-menubar navbar-nav">
+    <div class="site-menubar-body">
+        <ul class="site-menu">
+
+            <li class="site-menu-item">
+                    </li>
+            <li class="site-menu-item">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon" aria-hidden="true"  title="40000"></i>
+                    <span class="site-menu-title">快递管理</span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">修改单号</a></li>
+                    <li><a href="#">信息更新</a></li>
+                </ul></li>
+            <li class="site-menu-item">
+                <a href="#"><i class="icon" aria-hidden="true" title="30000"></i><span class="site-menu-title">快件查询</span></a>
+                <ul class="dropdown-menu">
+                </ul></li>
+            <li class="site-menu-item">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon" aria-hidden="true"  title="50000"></i>
+                    <span class="site-menu-title">站点管理</span>
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">站点位置</a></li>
+                    <li><a href="#">修改站点信息</a></li>
+                </ul></li>
+
+            <li class="site-menu-item">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="icon" aria-hidden="true"  title="20000"></i><span class="site-menu-title">个人信息</span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">密码修改</a></li>
+                    <li><a href="#">基本信息</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="page">
+    <div class="showpic">
+        <ul>
+            <li class="activeImg" style="opacity: 1; z-index: 1; background-image:url(img/user/header-6.jpg)"></li>
+        </ul>
+    </div>
+    <div class="cover-info">
+        <div class="container">
+            <div class="my-avatar">
+				<span class="avatar">
+						<img alt="..." src="img/23.jpg">
+					 <label class="badge">Manager</label>
+				</span>
+            </div>
+            <div class="name">
+                <a href="#">管理员</a>
+            </div>
+        </div>
+    </div>
+   <!-- <div class="container">
+        <div class="row ais-search">
+            <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+                <a href="#"
+                   class="btn btn-primary btn-lg btn-block"> <i
+                        class="m_right_10" aria-hidden="true"></i>邀请好友
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <a href="#"
+                   class="btn btn-primary btn-lg btn-block"> <i
+                        class="icon fa-send-o" aria-hidden="true"></i>&nbsp;我要寄件
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+                <form method="post" id="history_search"
+                      action="#">
+                    <div class="input-group input-group-lg">
+                        <input name="mailno" id="mailno" value=""
+                               class="form-control" placeholder="请输入运单号" /> <span
+                            class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+                                <i class="icon fa-search" aria-hidden="true"></i> 查询
+                            </button>
+						</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>-->
+    <div class="container m_top_30">
+        <div class="ais-box">
+            <h5>订单信息修改</h5>
+            <div class="panel panel-default">
+                <div class="panel-heading">订单信息</div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>订单号</th>
+                            <th>快递单号</th>
+                            <th>联系电话</th>
+                            <th>收货地址</th>
+                            <th>&nbsp;&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <th><input type="text" value="123654" name="dingdanhao" id="num"></th>
+                            <th><input type="text"></th>
+                            <th><input type="text"></th>
+                            <th><input type="text"></th>
+                            <th><input type="submit" id="change" value="修改">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" id="add" value="添加"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="page-copyright">
+                    <p>© 2018. All RIGHT RESERVED. ais速递有限公司  版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+<!-- js plugins  -->
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/page.js"></script>
+<script src="js/manager.js"></script>

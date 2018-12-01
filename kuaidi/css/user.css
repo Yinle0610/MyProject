@@ -1,0 +1,17 @@
+@font-face{
+    font-family: "yinle";
+    src: url('../font/YtoIcons.woff') format('truetype');
+}
+.icofont{
+    font-family: 'yinle';
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+li a{
+    color: #fff;
+}
